@@ -2,94 +2,62 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Cá Nhân</title>
+    <title>Trái tim chạy</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f2f2f2;
-            color: #333;
+            height: 100vh;
+            background: #ffe6f0;
+            overflow: hidden;
         }
 
-        .header {
-            background-color: #2196F3;
-            color: white;
+        .heart {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            font-size: 80px;
+            animation: chay 5s linear infinite;
+        }
+
+        .chan {
+            font-size: 45px;
             text-align: center;
-            padding: 40px;
+            margin-top: -15px;
+            animation: nhay 0.2s infinite alternate;
         }
 
-        .header h1 {
-            margin: 0;
+        @keyframes chay {
+            0% {
+                left: -150px;
+            }
+
+            50% {
+                left: 45%;
+            }
+
+            100% {
+                left: 100%;
+            }
         }
 
-        .content {
-            width: 80%;
-            max-width: 800px;
-            margin: 30px auto;
-        }
+        @keyframes nhay {
+            from {
+                transform: translateY(0);
+            }
 
-        .box {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px #ccc;
-        }
-
-        .box h2 {
-            color: #2196F3;
-        }
-
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            to {
+                transform: translateY(-12px);
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="header">
-        <h1>TRANG WEB CÁ NHÂN</h1>
-        <p>Xin chào! Chào mừng bạn đến với website của tôi</p>
-    </div>
-
-    <div class="content">
-
-        <div class="box">
-            <h2>Giới thiệu</h2>
-            <p>
-                Xin chào! Mình là Nguyễn Trường Tiến.
-                Mình là sinh viên và đang học tập, tìm hiểu về
-                lập trình và công nghệ thông tin.
-            </p>
-        </div>
-
-        <div class="box">
-            <h2>Sở thích</h2>
-            <p>💻 Lập trình</p>
-            <p>🎮 Chơi game</p>
-            <p>🎵 Nghe nhạc</p>
-            <p>⚽ Thể thao</p>
-        </div>
-
-        <div class="box">
-            <h2>Mục tiêu</h2>
-            <p>
-                Không ngừng học hỏi, nâng cao kiến thức lập trình
-                và phát triển các kỹ năng cần thiết cho công việc
-                trong tương lai.
-            </p>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        <p>© 2026 - Nguyễn Trường Tiến</p>
+    <div class="heart">
+        ❤️
+        <div class="chan">🦵 🦵</div>
     </div>
 
 </body>
